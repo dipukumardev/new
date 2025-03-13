@@ -40,8 +40,7 @@ body {
     padding: 0;
     font-family: 'Poppins', sans-serif;
     background: url('./backgr.jpg') no-repeat center center/cover;
-    background-size: 30% 100%;
-    background-position: center;
+    background-size: cover;
     color: white;
     text-align: center;
     height: 100vh;
@@ -57,19 +56,20 @@ body {
     padding: 20px;
     background: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
+    box-sizing: border-box;
 }
 
 /* Top Image */
 .top-image {
-    width: 100px;
+    width: 80px;
     margin-bottom: 15px;
 }
 
 /* Heading */
 h2 {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 /* Join Button */
@@ -77,10 +77,10 @@ h2 {
     display: inline-block;
     background: #007bff;
     color: white;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     text-decoration: none;
-    padding: 12px 25px;
+    padding: 10px 20px;
     border-radius: 5px;
     box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.4);
     animation: heartbeat 1.5s infinite;
@@ -96,7 +96,8 @@ h2 {
 /* Highlighted Text */
 .highlight {
     font-weight: bold;
-    margin: 15px 0;
+    margin: 10px 0;
+    font-size: 14px;
 }
 
 /* Best Channel Box */
@@ -104,20 +105,49 @@ h2 {
     background: white;
     color: red;
     font-weight: bold;
-    padding: 8px 15px;
+    padding: 5px 10px;
     display: inline-block;
     border-radius: 5px;
+    font-size: 14px;
 }
 
 /* Calls Section */
 .calls {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
 }
 
 /* Footer */
+.footer {
+    font-size: 12px;
+}
 .footer span {
     color: limegreen;
     font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+    
+    h2 {
+        font-size: 14px;
+    }
+    
+    .join-btn {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+    
+    .highlight, .best-channel, .calls {
+        font-size: 12px;
+    }
+    
+    .footer {
+        font-size: 10px;
+    }
 }
 </style>
