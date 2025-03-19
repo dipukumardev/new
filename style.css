@@ -31,8 +31,9 @@ body {
 
 /* Top Image */
 .top-image {
-    width: 80px;
+    width: 140px;
     margin: 10px auto;
+    border-radius: 12px;
 }
 
 /* Heading */
@@ -107,19 +108,19 @@ h2 {
     }
     
     h2 {
-        font-size: 16px;
+        font-size: 20px;
     }
     
     .join-btn {
-        font-size: 14px;
+        font-size: 30px;
         padding: 10px 20px;
     }
     
     .highlight, .best-channel, .calls {
-        font-size: 12px;
+        font-size: 20px;
     }
     
     .footer {
-        font-size: 10px;
+        font-size: 20px;
     }
 }
