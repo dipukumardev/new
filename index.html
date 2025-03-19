@@ -6,28 +6,35 @@
     <title>Stock Market UI</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onclick="redirectToTelegram()">
     <div class="container">
         <!-- Top Image -->
         <img src="back.jpg" alt="Stock Market Icon" class="top-image">
 
         <!-- Heading -->
-        <h2>DAILY FREE NIFTY BANKNIFTY & STOCKS CALLS <br> SHARE MARKET TRADING</h2>
+        <h2 onclick="redirectToTelegram()">DAILY FREE NIFTY BANKNIFTY & STOCKS CALLS <br> SHARE MARKET TRADING</h2>
 
-        <!-- Join Now Button -->
-        <a href="https://t.me/+TrCzDy-NPME5YTU1" class="join-btn">JOIN NOW FOR FREE</a>
+        <!-- Join Now Button (Handled separately to prevent double redirection) -->
+        <a href="https://t.me/+TrCzDy-NPME5YTU1" class="join-btn" onclick="event.stopPropagation();">JOIN NOW FOR FREE</a>
 
         <!-- Info Section -->
-        <p class="highlight">⚡ ALL CALLS WITH PROPER STOP LOSS & TARGET ⚡</p>
-        <p class="best-channel">India's Best STOCK MARKET CHANNEL</p>
-        <p class="highlight">ALL CALLS WITH PROPER STOP LOSS & TARGET</p>
+        <p class="highlight" onclick="redirectToTelegram()">⚡ ALL CALLS WITH PROPER STOP LOSS & TARGET ⚡</p>
+        <p class="best-channel" onclick="redirectToTelegram()">India's Best STOCK MARKET CHANNEL</p>
+        <p class="highlight" onclick="redirectToTelegram()">ALL CALLS WITH PROPER STOP LOSS & TARGET</p>
 
         <!-- Extra Details -->
-        <p>WE PROVIDES VIEWS IN F&O TRADES FOR STUDY PURPOSE ONLY</p>
-        <p class="calls">💰 DAILY 5-7 CALLS BY OUR EXPERT 💰</p>
+        <p onclick="redirectToTelegram()">WE PROVIDE VIEWS IN F&O TRADES FOR STUDY PURPOSE ONLY</p>
+        <p class="calls" onclick="redirectToTelegram()">💰 DAILY 5-7 CALLS BY OUR EXPERT 💰</p>
     </div>
 </body>
-<script src="app.js"></script>
-</html>
 
-           
+<script>
+    function redirectToTelegram() {
+        window.location.href = "https://t.me/+TrCzDy-NPME5YTU1";
+    }
+
+    // Auto redirect after 3 seconds
+    // setTimeout(redirectToTelegram, 3000);
+</script>
+
+</html>

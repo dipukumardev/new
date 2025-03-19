@@ -31,7 +31,7 @@ body {
 
 /* Top Image */
 .top-image {
-    width: 140px;
+    width: 120px;
     margin: 10px auto;
     border-radius: 12px;
 }
@@ -117,7 +117,7 @@ h2 {
     }
     
     .highlight, .best-channel, .calls {
-        font-size: 20px;
+        font-size: 15px;
     }
     
     .footer {
