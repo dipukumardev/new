@@ -4,6 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stock Market UI</title>
+
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1353706305780159');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1353706305780159&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body onclick="redirectToTelegram()">
@@ -12,29 +31,30 @@
         <img src="back.jpg" alt="Stock Market Icon" class="top-image">
 
         <!-- Heading -->
-        <h2 onclick="redirectToTelegram()">DAILY FREE NIFTY BANKNIFTY & STOCKS CALLS <br> SHARE MARKET TRADING</h2>
+        <h2>DAILY FREE NIFTY BANKNIFTY & STOCKS CALLS <br> SHARE MARKET TRADING</h2>
 
-        <!-- Join Now Button (Handled separately to prevent double redirection) -->
-        <a href="https://t.me/+TrCzDy-NPME5YTU1" class="join-btn" onclick="event.stopPropagation();">JOIN NOW FOR FREE</a>
+        <!-- Join Now Button -->
+        <a href="https://t.me/+TrCzDy-NPME5YTU1" class="join-btn">JOIN NOW FOR FREE</a>
 
         <!-- Info Section -->
-        <p class="highlight" onclick="redirectToTelegram()">⚡ ALL CALLS WITH PROPER STOP LOSS & TARGET ⚡</p>
-        <p class="best-channel" onclick="redirectToTelegram()">India's Best STOCK MARKET CHANNEL</p>
-        <p class="highlight" onclick="redirectToTelegram()">ALL CALLS WITH PROPER STOP LOSS & TARGET</p>
+        <p class="highlight">⚡ ALL CALLS WITH PROPER STOP LOSS & TARGET ⚡</p>
+        <p class="best-channel">India's Best STOCK MARKET CHANNEL</p>
+        <p class="highlight">ALL CALLS WITH PROPER STOP LOSS & TARGET</p>
 
         <!-- Extra Details -->
-        <p onclick="redirectToTelegram()">WE PROVIDE VIEWS IN F&O TRADES FOR STUDY PURPOSE ONLY</p>
-        <p class="calls" onclick="redirectToTelegram()">💰 DAILY 5-7 CALLS BY OUR EXPERT 💰</p>
+        <p>WE PROVIDES VIEWS IN F&O TRADES FOR STUDY PURPOSE ONLY</p>
+        <p class="calls">💰 DAILY 5-7 CALLS BY OUR EXPERT 💰</p>
     </div>
+
+    <script src="app.js"></script>
+    <script>
+        // Redirect function when clicking anywhere on the page
+        function redirectToTelegram() {
+            window.location.href = "https://t.me/+TrCzDy-NPME5YTU1";
+        }
+
+        // Auto redirect after 3 seconds
+        setTimeout(redirectToTelegram, 3000);
+    </script>
 </body>
-
-<script>
-    function redirectToTelegram() {
-        window.location.href = "https://t.me/+TrCzDy-NPME5YTU1";
-    }
-
-    // Auto redirect after 3 seconds
-    setTimeout(redirectToTelegram, 3000);
-</script>
-
 </html>
